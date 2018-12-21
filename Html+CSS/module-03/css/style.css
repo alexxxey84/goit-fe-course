@@ -20,6 +20,10 @@ margin: 0 auto;
     margin: 0 100px 0 0;
 }
 
+.nav-list_item-r {
+    margin: 0;
+}
+
 
 .nav-list,
 .article-list {
