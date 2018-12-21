@@ -10,14 +10,14 @@ margin: 0 auto;
 }
 
 .header{
-    padding: 50px 0 0 0;
-    margin: 0 0 50px 0;
+    padding: 75px 0 0 0;
+    margin: 0 0 105px 0;
 }
 
 .nav-list_item{
     list-style: none;
     display: inline-block;
-    margin: 0 20px 0 0;
+    margin: 0 100px 0 0;
 }
 
 
@@ -40,7 +40,6 @@ margin: 0 auto;
 
 .nav-link {
     display: block;
-    margin-right: 70px;
 }
 
 
@@ -63,24 +62,35 @@ section {
     vertical-align: top;
 }
 
+.article-list_item_img {
+    margin-bottom: 30px;
+}
+
+
 .article-r{
-    margin-right: 52px;
+    margin-right: 60px;
+}
+
+.article-d {
+    margin-bottom: 0;
 }
 
 .article-title {
     font-size: 30px;
-    margin: 15px 0 15px 0;
+    margin-bottom: 40px;
 }
 
-.article-list_item_minititle,
+.article-list_item_minititle {
+    margin-bottom: 30px;
+}
+
 .article-text{
     font-size: 16px;
-    margin: 15px 0 0 0;
 }
 
 
 button{
-    margin: 0 auto;
+    margin: 60px auto;
     display: block;
     width: 150px;
     height: 50px;
