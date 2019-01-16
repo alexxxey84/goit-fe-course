@@ -17,20 +17,20 @@
 }
 
 .logo-link {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    color: #0f0101;
-    font-size: 14px; 
-    font-weight: bold; 
-    font-family: 'Open Sans', sans-serif, serif;
+    color: #515151;
+    font-size: 30px; 
+    font-weight: 100; 
+    font-family: 'Roboto', sans-serif, serif;
     margin-right: 570px;
 }
 
-.logo-link:hover{
-    background-color: transparent;
+.logo-link::first-letter {
     color: #1abc9c;
+    font-size: 30px; 
 }
-
 
 .nav-list{
     list-style: none;
