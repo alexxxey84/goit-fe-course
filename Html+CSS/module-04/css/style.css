@@ -23,7 +23,6 @@
     font-family: 'Roboto';
     margin-right: 100px;
     float: left;
-    margin-right: 570px;
 }
 
 .logo-link::first-letter {
@@ -43,7 +42,7 @@
     text-decoration: none;
     text-align: center;
     margin: 0 20px 0 0;
-    float: left;
+    float: right;
 }
 
 .nav-list-item:last-child {
@@ -75,6 +74,7 @@
     font-size: 48px;
     font-weight: 900;
     font-family: 'Roboto', sans-serif, serif;
+    margin-bottom: 91px;
 }
 
 .section-title::after {
@@ -86,7 +86,6 @@
     width: 165px;
     margin: 0 auto;
     margin-top: 32px;
-    margin-bottom: 91px;
 }
 
 .product-list-item{
@@ -94,7 +93,7 @@
     list-style: none;
     width: 255px;
     margin: 0 30px 0 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     vertical-align: top;
     float: left;
 }
@@ -142,16 +141,12 @@
     background-color: #8c8c8c;
 }
 
-/* .product-list-item:hover product-name-link {
-    background: #1abc9c;
-} */
-
-.product-name-link:hover {
-    background: #1abc9c;
+.product-list-item:hover .product-name-link {
+    background-color: #1abc9c;
 }
 
-.product-price:hover {
-    background: #7fd9c7;
+.product-list-item:hover .product-price {
+    background-color: #7fd9c7;
 }
 
 .products {
@@ -214,7 +209,7 @@
     color: #ffffff;
     font-size: 16px; 
     display: block;
-    background-color: #1abc9c;
+    background-color: #444242;
     width: 160px;
     height: 50px;
     border: 1px solid;
@@ -222,4 +217,8 @@
     text-align: center;
     font-family: 'Open Sans', sans-serif, serif;
     font-weight: 300;
+}
+
+.news-link-more:hover {
+    background-color: #1abc9c;
 }
