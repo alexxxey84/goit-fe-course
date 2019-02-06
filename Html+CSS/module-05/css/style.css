@@ -73,9 +73,11 @@ body {
 }
 
 .banner {
-    width: 1280px;
+    width: 100%;
+    height: 600px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .banner-img {
@@ -83,7 +85,7 @@ body {
 }
 
 .banner-container {
-    display: block;
+    display: none;
     position: absolute;
     top: 0%;
     left: 0%;
