@@ -32,7 +32,25 @@ body {
 }
 
 .logo-link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 30px; 
+    font-weight: 100; 
+    font-family: var(--main-font);
     float: left;
+}
+
+
+.logo-link::first-letter {
+    color: #1abc9c;
+    font-size: 30px; 
+}
+
+
+h1 {
+    margin: 0 auto;
 }
 
 .header-nav {
@@ -60,7 +78,7 @@ body {
     color: #0f0101;
     font-size: 14px; 
     font-weight: bold; 
-    font-family: 'Open Sans', sans-serif, serif;
+    font-family: var(--main-font);
 }
 
 .nav-link:hover{
@@ -68,7 +86,7 @@ body {
     color: #1abc9c;
 }
 
-.banner {
+.slider {
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -76,12 +94,12 @@ body {
     overflow: hidden;
 }
 
-.banner-img {
+.slider-img {
     display: block;
 }
 
-.banner-container {
-    display: none;
+.slider-container {
+    display: block;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -92,45 +110,50 @@ body {
     
 }
 
-.banner-menu {
+.slider-menu {
     position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
     width: 1110px;
-    border: 1px solid white;
 }
 
-
-.banner-button-back,
-.banner-text-conteiner {
-    list-style: none;
-    margin-right: 0 auto;
-    float: left;
-    margin-right: 70px;
-}
-
-.banner-text-conteiner {
-    margin-right: 0;  
-}
-
-
-
-
-.banner-button-back {
+.slider-button {
+    position: absolute;
+    display: inline-block;
+    border: none;
     width: 105px;
     height: 105px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-button-prev {
+    background-image: url(../img/<.png);
+    left: 0;
+}
+
+.slider-button-next {
+    background-image: url(../img/>.png);
+    right: 0;
+}
+
+.slider-button:hover {
     background-color:  #1abc9c;
 }
 
-.banner-text-title {
-    margin: 0 auto;
-    text-align: center;
+.slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-h1 {
-    margin: 0;
-    padding: 0 auto;
+.slides-text-title {
+    margin: 0 auto;
+    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 60px;
@@ -138,32 +161,18 @@ h1 {
     font-family: var(--main-font);
 }
 
-.banner-text {
+.slides-text {
     text-transform: uppercase;
     color: #ffffff;
     font-size: 24px;
-    font-weight: 400; 
-    font-family: 'Open Sans', sans-serif, serif;
-}
-
-.banner-button-forward {
-    list-style: none;
-    width: 105px;
-    height: 105px;
-    margin-right: 0;
-    background-color: #1abc9c;
-    float: right;
-}
-
-.banner:hover .banner-container{
-    display: block;
+    font-weight: 100; 
+    font-family: var(--main-font);
 }
 
 .products-wrapper {
     background-color: var(--product-section-bg-color);
     padding: 102px 0;
 }
-
 
 .section-title{ 
     margin-bottom: 32px;
@@ -172,7 +181,7 @@ h1 {
     color: #515151;
     font-size: 48px;
     font-weight: 900;
-    font-family: 'Roboto', sans-serif, serif;
+    font-family: var(--main-font);
     margin-bottom: 91px;
 }
 
@@ -219,10 +228,11 @@ h1 {
 .product-overlay {
     display: none;
     position: absolute;
-    width: 235px;
-    height: 302px;
-    top: 10px;
-    left: 10px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 10px solid #ffffff;
     text-align: center;
     background-color: rgba(0,0,0, .4)
 }
@@ -256,7 +266,7 @@ h1 {
     background-color: #1abc9c;
 }
 
-.buyer-menu-large-button {
+.cart {
     width: 170px;
     height: 50px;
     background-color: transparent;
@@ -264,7 +274,16 @@ h1 {
     border: 1px solid #ffffff;
 }
 
-.buyer-menu-large-button:hover {
+.cart-text {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: center;
+}
+
+.cart:hover {
     background-color: #1abc9c;
 }
 
@@ -279,7 +298,7 @@ h1 {
     font-size: 18px;
     color: #ffffff;  
     font-weight: 900;
-    font-family: 'Roboto', sans-serif, serif;
+    font-family: var(--main-font);
     float: left;
 }
 
@@ -325,5 +344,6 @@ h1 {
 }
 
 .footer-designed {
+    list-style: none;
     color: #1abc9c    
 }

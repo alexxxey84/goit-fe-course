@@ -1,9 +1,11 @@
 :root {
     --main-font-color: brown;
     --semi-font-color: white;
+    --main-font: 'Roboto', serif, sans-serif;
+    --semi-font: 'Open Sans' serif, sans-serif;
+
     --main-bg-color: #faafaf;
     --semi-bg-color: #d46363;
     --product-section-bg-color: #e9f0fd;
-    --main-font: 'Roboto', serif, sans-serif;
 }
 
