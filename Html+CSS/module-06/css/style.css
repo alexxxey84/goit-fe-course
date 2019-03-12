@@ -194,6 +194,23 @@ figure {
     text-align: center;
 }
 
+.name {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.position {
+    font-family: var(--list-item-font);
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .team-member-photo {
     height: 470px;
     width: 380px;
@@ -245,13 +262,14 @@ figure {
     background-color: #95e1d3;
 }
 
-
-
-
-
-
-
-
+.team-section::after {
+    content: "";
+    border-bottom: 1px solid #cccccc;
+    background-color:  #cccccc;
+    width: 1200px;
+    display: block;
+    margin-top: 85px;
+}
 
 .footer {
     height: 65px;
@@ -259,3 +277,40 @@ figure {
     justify-content: space-between;
     align-items: center;
 }
+
+.site-info {
+    font-family: var(--main-font);
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.author {
+    text-decoration: none;
+    color: #f38181
+}
+
+input {
+    height: 40px;
+    width: 230px;
+    margin: 0;
+    border: 1px solid #cccccc;
+    font-family: var(--list-item-font);
+    font-style: italic;
+    color: #cccccc;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    margin: 0;
+    background-color: #95e1d3;
+    border: 1px solid #95e1d3;
+    font-family: var(--main-font);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+
+
