@@ -1,0 +1,261 @@
+
+@import "./vars.css";
+
+*{
+    box-sizing: border-box;
+}
+
+*, 
+*::before, *::after {
+    box-sizing: inherit;
+} 
+
+.container {
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--main-font);
+    color: var(--header-font-color);
+}
+
+.nav-list-item {
+    position: relative;
+}
+
+.nav-list-item::after {
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: #f38181;
+    width: 0%;
+    margin-top: 5px;
+    transition: width 200ms linear;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+
+.nav-link:hover {
+    color: #f38181;
+}
+
+.nav-list-item:hover::after,
+.nav-list-item:focus::after {
+    width: 100%;
+}
+
+.services-section {
+    padding-top: 30px;
+}
+
+.before-title-text {
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--text-before);
+    color: #333333;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    color: #333333; 
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-title::after {
+    content: "";
+    border-bottom: 1px solid #f38181;
+    background-color: #f38181;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    display: block;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.services-list-item {
+    list-style: none;
+    width: 320px;
+    margin-bottom: 100px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.serv {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sprite {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ALARM {
+    width: 32px;
+    height: 31px;
+    background-position: -5px -5px;
+}
+
+.sprite-BOOK-2 {
+    width: 32px;
+    height: 32px;
+    background-position: -47px -5px;
+}
+
+.sprite-COMPUTER-_-OK {
+    width: 32px;
+    height: 28px;
+    background-position: -5px -47px;
+}
+
+.sprite-HOME {
+    width: 32px;
+    height: 31px;
+    background-position: -47px -47px;
+}
+
+.sprite-IMAGE {
+    width: 32px;
+    height: 32px;
+    background-position: -89px -5px;
+}
+
+.sprite-LINE-GRAPH {
+    width: 32px;
+    height: 32px;
+    background-position: -89px -47px;
+}
+
+.list-item-title {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    margin: 0 auto;
+    font-family: var(--list-item-font);
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+.team-member-photo {
+    height: 470px;
+    width: 380px;
+    position: relative;
+}
+
+.list-social-link {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 370px;
+}
+
+.team-member-overlay {
+    display: none;
+    align-items: center;
+    height: 470px;
+    width: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #eaffd0 30%, #fce38a 60%, #f38181 90%);
+    opacity: 0.8;
+}
+
+.social-link {
+    height: 55px;
+    width: 55px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #f38181;
+    background-color: #fce38a;
+}
+
+.team-member-photo:hover {
+    transform: translateX(-10px) translateY(-10px); 
+    box-shadow: 10px 10px 0px 0px #95e1d3;
+    transition: 200ms linear;
+}
+
+.team-member-photo:hover .team-member-overlay {
+    display: flex;
+}
+
+.social-link:hover {
+    transition: 200ms linear;
+    background-color: #95e1d3;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
