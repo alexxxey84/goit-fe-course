@@ -182,10 +182,16 @@
     font-weight: 400;
 }
 
+.team-section {
+    padding-bottom: 85px;
+}
+
+
 .team-list {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -233,8 +239,8 @@ figure {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to top, #eaffd0 30%, #fce38a 60%, #f38181 90%);
-    opacity: 0.8;
+    background-image: linear-gradient(to bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    opacity: 1;
 }
 
 .social-link {
@@ -262,13 +268,11 @@ figure {
     background-color: #95e1d3;
 }
 
-.team-section::after {
-    content: "";
-    border-bottom: 1px solid #cccccc;
+hr {
+    border: none;
     background-color:  #cccccc;
+    height: 1px;
     width: 1200px;
-    display: block;
-    margin-top: 85px;
 }
 
 .footer {
@@ -311,6 +315,4 @@ button {
     text-transform: uppercase;
     color: #ffff;
 }
-
-
 
