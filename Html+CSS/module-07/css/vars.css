@@ -1,6 +1,8 @@
 :root {
     --main-font-color: #777777;
-    --title-font-color: #222222; 
-    --main-font: 'Montserrat', serif;
+    --title-font-color: #222222;
+    --footer-title-color: #ffffff; 
+    --main-font: 'Montserrat', sans-serif;
     --text-font: 'Fondamento', serif;
+    --descrip-font: 'Roboto Slab' serif;
 }

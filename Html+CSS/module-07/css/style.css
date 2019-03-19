@@ -56,6 +56,7 @@ h1 {
 
 section {
     padding-top: 40px;
+    padding-bottom: 120px;
 }
 
 .main-title {
@@ -87,11 +88,6 @@ section {
 }
 .services-list-item {
     text-align: center;
-
-}
-.services-title {
-}
-.services-descrip {
 }
 
 .sprite {
@@ -100,23 +96,68 @@ section {
     display: block;
 }
 
-.sprite-Icon-Basket {
-    margin: 0 auto;
-    width: 74px;
-    height: 73px;
-    background-position: -5px -5px;
-}
-
-.sprite-Icon-Laptop {
-    margin: 0 auto;
-    width: 74px;
-    height: 73px;
-    background-position: -89px -5px;
-}
-
+.sprite-Icon-Basket,
+.sprite-Icon-Laptop,
 .sprite-Icon-Locked {
     margin: 0 auto;
     width: 74px;
     height: 73px;
+    margin-bottom: 25px;
+}
+
+.sprite-Icon-Basket {
+    background-position: -5px -5px;
+}
+
+.sprite-Icon-Laptop {
+    background-position: -89px -5px;
+}
+
+.sprite-Icon-Locked {
     background-position: -5px -88px;
+}
+
+.services-title {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--title-font-color);
+    margin-bottom: 20px;
+}
+
+.services-descrip {
+    font-family: var(--descrip-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-font-color);
+}
+
+.footer {
+    padding-top: 110px;
+    padding-bottom: 115px;
+    background-image: url(../img/Map\ Image.png);
+    background-size: cover;
+}
+
+.footer-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--footer-title-color);
+    margin-bottom: 25px;
+}
+
+.footer-title-info {
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--main-font-color);
+    margin-bottom: 80px;
 }
