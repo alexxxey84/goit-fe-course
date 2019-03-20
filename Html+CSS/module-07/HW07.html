@@ -11,14 +11,15 @@
 </head>
 
 <body>
-    <header class="header container">
-        <h1>
-        <a href="#" class="logo-link">
+    <div class="container">
+        <header class="header">
+            <h1>
+            <a href="#" class="logo-link">
             <img 
             src="./img/Logo-Treehouse.png" 
             alt="logo">
-        </a>
-        </h1>
+            </a>
+            </h1>
 
         <nav class="header-nav">
             <ul class="nav-list">
@@ -30,8 +31,9 @@
             </ul>
         </nav>
     </header>
-
-    <section class="services container">
+    </div>
+    <main>
+        <section class="services-wrapper">
         <h2 class="main-title">services</h2>
             <p class="main-title-info">Lorem ipsum dolor sit amet consectetur</p>
 
@@ -57,66 +59,47 @@
                 </ul>
     </section>
     
-    <footer class="footer_container">
-        <h2 class="footer-title">contact us</h2>
-            <p class="footer-title-info">Lorem ipsum dolor sit amet consectetur</p>
-        
-        <div class="form-wrapper">
-            <form action="#" method="post">
-                <ul class="form-list">
-                    <li> 
-                        <input 
-                        class="small-form"
-                        type="text"
-                        name="name"
-                        id="id_input"
-                        placeholder="your name*"
-                        required
-                        />
+    <section>
+            <div class="form-container">
+                
+                <h2 class="section-form-title">contact us</h2>
                     
-                        <input
-                        class="small-form" 
-                        type="email"
-                        name="email"
-                        id="id_input"
-                        placeholder="your e-mail*"
-                        />
-                    
-                        <input
-                        class="small-form" 
-                        type="text"
-                        name="subject"
-                        id="id_input"
-                        placeholder="subject"
-                        />
-                    </li>
-                    <li> 
-                        <textarea
-                        name="message"
-                        rows="5"
-                        cols="45"
-                        placeholder="your message*"
-                        required></textarea>
-                        
-                    </li>
-                    <li> 
-                            <input
-                            class="send_message" 
-                            type="submit"
-                            value="send message"
-                            />
-                        </li>
+                <p class="section-form-title-info">Lorem ipsum dolor sit amet consectetur</p>
 
-
-                </ul>
-            </form>
-        </div>
-            
-
-
-
-    </footer>
-
-    
+                    <div class="form-wrapper">
+                      <form action="#" method="post" class="contact-form">
+                        <div class="contact-form-inputs">
+                          <div class="input-group">
+                            <input 
+                            class="small-form" 
+                            type="text" 
+                            name="name"
+                            placeholder="your name*" 
+                            required/>           
+                                <input 
+                                class="small-form" 
+                                type="email" 
+                                name="email" 
+                                placeholder="your e-mail*" 
+                                required/>
+                                    <input 
+                                    class="small-form" 
+                                    type="text" 
+                                    name="subject"
+                                    placeholder="subject"/>
+                          </div>             
+                                <textarea 
+                                name="message" 
+                                placeholder="your message*" 
+                                required> 
+                                </textarea>
+                        </div>
+                            <button class="send_message" 
+                            type="submit">send message</button> 
+                       </form>
+                    </div>
+                    </div>
+    </section>    
+    </main>  
 </body>
 </html>
