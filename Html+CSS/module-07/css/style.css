@@ -12,7 +12,6 @@
 }
 
 .container {
-    width: 1400px;
     margin: 0 auto;
 }
 
@@ -236,11 +235,7 @@ textarea {
   .contact-form textarea[required]:valid {
     border: 2px solid #baec03;
   }
-  
-  .contact-form input:not(:last-of-type) {
-      margin-bottom: 28px;
-  }
-  
+    
   .send_message {
       display: block;
       font-family: var(--main-font);
