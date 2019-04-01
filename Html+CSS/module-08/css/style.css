@@ -1,0 +1,22 @@
+@import "./vars.css";
+@import "./fonts.css";
+
+* { 
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+* ::before, *::after {
+    box-sizing: inherit;
+}
+
+.info-section {
+    min-width: 20em;
+    display: flex;
+    background-image: url(../img/banner.png);
+}
+
+
+
