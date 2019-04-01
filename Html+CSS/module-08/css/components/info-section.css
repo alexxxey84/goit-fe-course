@@ -1,0 +1,33 @@
+.masthead-wrapper {
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+     url(../../img/banner.png) center/cover no-repeat;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 22rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--info-section-font-color);
+    text-align: center;
+}
+
+.nav-list-item {
+    display: block;
+}

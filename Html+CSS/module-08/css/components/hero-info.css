@@ -1,0 +1,32 @@
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 22rem;
+    padding: 1.5rem;
+}
+
+
+.hero-info-title {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var( --info-section-font-color);
+    text-align: center;
+}
+
+.hero-info-decription {
+    font-family: var(--semi-font);
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var( --info-section-font-color);
+    text-align: center;
+}
+
+.find-partners {
+    color: var(--info-section-font-color);
+    background-color:#ff4e50;
+    border: none;
+}

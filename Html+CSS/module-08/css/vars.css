@@ -1,0 +1,9 @@
+:root {
+    --main-font: "Montserrat", serif, sans-serif;
+    --semi-font: "Roboto", serif, sans-serif;
+    --info-section-font-color: #ffffff;
+    --partner-section-font-color: #333333;
+    --partner-descrip-color: #666666;
+
+    font-size: 62.5%;
+}

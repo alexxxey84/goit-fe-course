@@ -1,5 +1,9 @@
-@import "./vars.css";
 @import "./fonts.css";
+@import "./vars.css";
+@import "./libs/utils.css";
+@import "./components/info-section.css";
+@import "./components/hero-info.css";
+@import "./components/partners.css";
 
 * { 
     margin: 0;
