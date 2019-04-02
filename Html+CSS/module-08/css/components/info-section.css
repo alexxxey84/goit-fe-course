@@ -12,16 +12,13 @@
 }
 
 .nav-list {
-    list-style: none;
     width: 17rem;
-    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-link {
-    text-decoration: none;
     font-family: var(--main-font);
     font-size: 1.4rem;
     font-weight: 700;
@@ -29,7 +26,6 @@
 }
 
 .logo-link {
-    text-decoration: none;
     text-transform: uppercase;
     font-family: var(--main-font);
     font-size: 2rem;

@@ -5,15 +5,6 @@
 @import "./components/hero-info.css";
 @import "./components/partners.css";
 
-* { 
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 100%;
-}
 
-*,
-* ::before, *::after {
-    box-sizing: inherit;
-}
 
 
