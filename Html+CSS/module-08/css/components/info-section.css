@@ -8,14 +8,24 @@
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
-    height: 22rem;
+    height: 13rem;
 }
 
 .nav-list {
     list-style: none;
+    width: 17rem;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--info-section-font-color);
 }
 
 .logo-link {
@@ -26,8 +36,4 @@
     font-weight: 700;
     color: var(--info-section-font-color);
     text-align: center;
-}
-
-.nav-list-item {
-    display: block;
 }

@@ -16,11 +16,4 @@
     box-sizing: inherit;
 }
 
-.info-section {
-    min-width: 20em;
-    display: flex;
-    background-image: url(../img/banner.png);
-}
-
-
 

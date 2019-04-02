@@ -12,13 +12,18 @@
 }
 
 .section {
-    padding: 5rem 0;
+    padding: 3rem 0;
+}
+
+h1 {
+    margin: 0;
 }
 
 .button {
+    display: block;
+    width: 24rem;
     padding: 2rem;
     text-align: center;
-    width: 28rem;
     text-decoration: none;
     font-family: var(--main-font);
     font-weight: 700;
