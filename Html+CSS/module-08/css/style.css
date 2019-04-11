@@ -1,5 +1,6 @@
 @import "./fonts.css";
 @import "./vars.css";
+@import "./libs/reset.css";
 @import "./libs/utils.css";
 @import "./components/info-section.css";
 @import "./components/hero-info.css";
